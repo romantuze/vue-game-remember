@@ -1,37 +1,26 @@
 <template>
-<div class="wrapper">
+<div class="app">
   <h1>Game Remember me</h1>
   <p>Запомни и открой все клетки</p>
-
-
-
-  <Board />
+  <Game />
 </div>
-
-
-
-
-
 </template>
 
 <script>
-import Board from './components/Board.vue'
+import Game from './components/Game.vue'
 
 export default {
   name: 'App',
   components: {
-    Board
+    Game
   }
 }
 </script>
 
 <style scoped>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.app {
+text-align: center;
+margin-top: 40px;
+font-family: Helvetica;
 }
 </style>
